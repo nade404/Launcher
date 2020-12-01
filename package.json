@@ -1,13 +1,13 @@
 {
-  "name": "nexuslauncher",
+  "name": "evershellLauncher",
   "version": "2.1.0",
-  "productName": "Nexus Launcher",
-  "description": "Costum Minecraft Launcher (with Optifine) for MC-Nexus.de",
-  "author": "Leon_Delacroixe",
+  "productName": ".EverShell",
+  "description": "Version du Launcher pour EverShell",
+  "author": "Beldah",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/ChickenDevLab/NexusLauncher",
+  "homepage": "https://github.com/nade404/Launcher",
   "bugs": {
-    "url": "https://github.com/ChickenDevLab/NexusLauncher/issues"
+    "url": "https://github.com/nade404/Launcher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -50,6 +50,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChickenDevLab/NexusLauncher.git"
+    "url": "git+https://github.com/nade404/Launcher.git"
   }
 }
