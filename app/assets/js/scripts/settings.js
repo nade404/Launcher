@@ -1223,7 +1223,7 @@ function populateVersionInformation(version, valueElement, titleElement, checkEl
         titleElement.style.color = '#ff886d'
         checkElement.style.background = '#ff886d'
     } else {
-        titleElement.innerHTML = 'Stable Release'
+        titleElement.innerHTML = 'Version Stable'
         titleElement.style.color = null
         checkElement.style.background = null
     }
@@ -1262,7 +1262,7 @@ function populateReleaseNotes() {
         },
         timeout: 2500
     }).catch(err => {
-        settingsAboutChangelogText.innerHTML = 'Infos herunterladen fehlgeschlagen.'
+        settingsAboutChangelogText.innerHTML = 'Échec du téléchargement des informations'
     })
 }
 
@@ -1310,21 +1310,21 @@ function settingsUpdateButtonStatus(text, disabled = false, handler = null) {
  */
 function populateSettingsUpdateInformation(data) {
     if (data != null) {
-        settingsUpdateTitle.innerHTML = `New ${isPrerelease(data.version) ? 'Pre-Release' : 'Release'} verf&uuml;gbar`
+        settingsUpdateTitle.innerHTML = `New ${isPrerelease(data.version) ? 'Pre-Release' : 'Release'} disponible`
         settingsUpdateChangelogCont.style.display = null
         settingsUpdateChangelogTitle.innerHTML = data.releaseName
         settingsUpdateChangelogText.innerHTML = data.releaseNotes
         populateVersionInformation(data.version, settingsUpdateVersionValue, settingsUpdateVersionTitle, settingsUpdateVersionCheck)
 
         if (process.platform === 'darwin') {
-            settingsUpdateButtonStatus('Herrunterladen von GitHub<span style="font-size: 10px;color: gray;text-shadow: none !important;">Schließe den Launcher und starte die .dmg-Datei.</span>', false, () => {
+            settingsUpdateButtonStatus('Téléchargement depuis GitHub<span style="font-size: 10px;color: gray;text-shadow: none !important;">Fermez le lanceur et démarrez le fichier .dmg.</span>', false, () => {
                 shell.openExternal(data.darwindownload)
             })
         } else {
-            settingsUpdateButtonStatus('Herrunterladen..', true)
+            settingsUpdateButtonStatus('Télécharger..', true)
         }
     } else {
-        settingsUpdateTitle.innerHTML = 'Du nutzt bereits die aktuellste Version'
+        settingsUpdateTitle.innerHTML = 'Vous utilisez déjà la dernière version'
         settingsUpdateChangelogCont.style.display = 'none'
         populateVersionInformation(remote.app.getVersion(), settingsUpdateVersionValue, settingsUpdateVersionTitle, settingsUpdateVersionCheck)
         settingsUpdateButtonStatus('Rechercher des mises à jour', false, () => {

@@ -50,7 +50,7 @@ function toggleLaunchArea(loading) {
  * @param {string} details The new text for the loading details.
  */
 function setLaunchDetails(details) {
-    launch_details_text.innerHTML = details
+    launch_details_text.innerHTML = details + '--server mc.evershell.net'
 }
 
 /**
@@ -805,7 +805,7 @@ function dlAsync(login = true) {
     // Begin Validations
 
     // Validate Forge files.
-    setLaunchDetails('Charger les informations du serveur.')
+    setLaunchDetails('Chargement les informations du serveur.')
 
     refreshDistributionIndex(true, (data) => {
         onDistroRefresh(data)
