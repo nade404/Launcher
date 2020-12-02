@@ -1,5 +1,5 @@
 {
-  "name": "evershellLauncher",
+  "name": "evershell",
   "version": "2.1.0",
   "productName": ".EverShell",
   "description": "Version du Launcher pour EverShell",
@@ -40,7 +40,8 @@
     "rimraf": "^3.0.2",
     "semver": "^7.3.2",
     "tar-fs": "^2.1.0",
-    "winreg": "^1.2.4"
+    "winreg": "^1.2.4",
+    "azuriom-auth": "0.1.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",

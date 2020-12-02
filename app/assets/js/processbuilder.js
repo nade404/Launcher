@@ -191,7 +191,7 @@ class ProcessBuilder {
 
         // Java Arguments
         if (process.platform === 'darwin') {
-            args.push('-Xdock:name=EverShellLauncher')
+            args.push('-Xdock:name=EverShell-Launcher')
             args.push('-Xdock:icon=' + path.join(__dirname, '..', 'images', 'minecraft.icns'))
         }
         args.push('-Xmx' + ConfigManager.getMaxRAM())
