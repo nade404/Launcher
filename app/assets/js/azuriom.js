@@ -3,7 +3,7 @@ const request = require('request'); // Make HTTP Requests
 const azuriom = require('azuriom-auth'); // Implements Azuriom authentication module
 
 // Server's path
-const authPath = "http://mcsite.evershell.net";
+const authPath = "https://site.evershell.net";
 
 const authenticator = new azuriom.Authenticator(authPath);
 

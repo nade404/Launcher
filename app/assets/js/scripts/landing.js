@@ -50,7 +50,7 @@ function toggleLaunchArea(loading) {
  * @param {string} details The new text for the loading details.
  */
 function setLaunchDetails(details) {
-    launch_details_text.innerHTML = details + '--server mc.evershell.net'
+    launch_details_text.innerHTML = details
 }
 
 /**
@@ -90,7 +90,7 @@ let cnt = 0
 // Bind launch button
 document.getElementById('launch_button').addEventListener('click', function (e) {
     if (cnt >= 1) {
-        setOverlayContent('Warnung', (cnt === 1 ? 'Es läuft bereits eine Minecraftinstanz!' : 'Es laufen bereits ' + cnt + ' Instanzen') + '<br> Durch mehrere Instanzen können Fehler aufkommen. Möchtest du trotzdem eine weitere starten?', 'Ja!', 'Nein!')
+        setOverlayContent('Warnung', (cnt === 1 ? 'Une instance Minecraft est déjà en cours d\'exécution!' : 'Il tourne déjà' + cnt + ' Les instances') + '<br> Des erreurs peuvent survenir via plusieurs instances. Voulez-vous toujours en créer un autre?', 'Oui', 'Non')
         setOverlayHandler(() => {
             toggleOverlay(false, true)
             cnt = cnt + 1
@@ -626,22 +626,22 @@ function dlAsync(login = true) {
                 case 'version':
                     setLaunchPercentage(40, 100)
                     loggerLaunchSuite.log('Données de version chargées.')
-                    setLaunchDetails('Vérifier les actifs.')
+                    setLaunchDetails('Données de version chargées.')
                     break
                 case 'assets':
                     setLaunchPercentage(60, 100)
                     loggerLaunchSuite.log('Validation des actifs terminée')
-                    setLaunchDetails('Vérifiez les bibliothèques.')
+                    setLaunchDetails('Vérification de la bibliothèque.')
                     break
                 case 'libraries':
                     setLaunchPercentage(80, 100)
                     loggerLaunchSuite.log('Vérifiez les autres fichiers.')
-                    setLaunchDetails('Vérifiez les autres fichiers.')
+                    setLaunchDetails('Vérification des autres fichiers.')
                     break
                 case 'files':
                     setLaunchPercentage(100, 100)
-                    loggerLaunchSuite.log('Validation du fichier terminée.')
-                    setLaunchDetails('alidation du fichier terminée.')
+                    loggerLaunchSuite.log('Validation du fichier.e.')
+                    setLaunchDetails('Validation des fichier..')
                     break
             }
         } else if (m.context === 'progress') {
@@ -932,7 +932,7 @@ let newsLoadingListener = null
  */
 function setNewsLoading(val) {
     if (val) {
-        const nLStr = 'Vérifier les actualités'
+        const nLStr = 'Vérification des actualités'
         let dotStr = '..'
         nELoadSpan.innerHTML = nLStr + dotStr
         newsLoadingListener = setInterval(() => {
