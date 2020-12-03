@@ -8,18 +8,8 @@
  ******************************************************************************/
 
 @font-face {
-    font-family: 'Avenir Book';
-    src: url('../fonts/Avenir-Book.ttf');
-}
-
-@font-face {
-    font-family: 'Avenir Medium';
-    src: url('../fonts/Avenir-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'Ringbearer';
-    src: url('../fonts/Ringbearer.ttf');
+    font-family: 'Dragon Fire';
+    src: url('../fonts/dragon-fire.ttf');
 }
 
 /*******************************************************************************
@@ -42,7 +32,7 @@ p {
 
 /* Set default font and color. */
 body, button {
-    font-family: 'Avenir Book';
+    font-family: 'Dragon Fire';
     color: white;
 }
 
@@ -110,7 +100,7 @@ body, button {
 }
 #frameTitleText {
     font-size: 14px;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     letter-spacing: 0.5px;
 }
 
@@ -283,7 +273,7 @@ body, button {
 }
 
 #welcomeHeader {
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     text-align: center;
     color: white;
     margin-bottom: 25px;
@@ -496,7 +486,7 @@ body, button {
 
 /* Header on login view. */
 #loginSubheader {
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     margin-bottom: 25px;
     font-size: 12px;
     letter-spacing: 1px;
@@ -521,7 +511,7 @@ body, button {
 
 /* Span which displays errors related to login field content. */
 .loginErrorSpan {
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     font-weight: bold;
     font-size: 8px;
     color: #ff1b0c;
@@ -557,7 +547,7 @@ body, button {
 
 /* Login text input styles. */
 .loginField {
-    font-family: 'Avenir Book';
+    font-family: 'Dragon Fire';
     background: none;
     border-width: 1.5px 0px 0px 0px;
     border-style: solid;
@@ -1077,7 +1067,7 @@ body, button {
 }
 .settingsTabHeaderText {
     font-size: 20px;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
 }
 .settingsTabHeaderDesc {
     font-size: 12px;
@@ -1095,7 +1085,7 @@ body, button {
     background: rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     border: 1px solid rgba(126, 126, 126, 0.57);
-    font-family: 'Avenir Book';
+    font-family: 'Dragon Fire';
     transition: 0.25s ease;
 }
 #settingsContainer input[type=number]:focus,
@@ -1124,12 +1114,12 @@ body, button {
 }
 .settingsFieldTitle {
     font-size: 14px;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     color: rgba(255, 255, 255, 0.95);
 }
 .settingsFieldNotSupported {
     font-size: 12px;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     color: rgba(255, 255, 255, 0.449);
 }
 .settingsFieldDesc {
@@ -1324,7 +1314,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
     width: 89%;
 }
 .settingsFileSelDesc strong {
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
 }
 
 /* * *
@@ -1412,7 +1402,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
     font-size: 12px;
     color: grey;
     font-weight: bold;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
 }
 .settingsAuthAccountDetailValue {
     font-size: 14px;
@@ -1434,7 +1424,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
     border: none;
     white-space: nowrap;
     background: none;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     outline: none;
     transition: 0.25s ease;
 }
@@ -1459,7 +1449,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
     background: none;
     font-size: 12px;
     border-radius: 3px;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     transition: 0.25s ease;
     cursor: pointer;
     outline: none;
@@ -1543,7 +1533,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
     background: none;
     font-size: 12px;
     border-radius: 3px;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     transition: 0.25s ease;
     cursor: pointer;
     outline: none;
@@ -2067,7 +2057,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
 /* Release type text. */
 #settingsAboutCurrentVersionTitle {
     font-size: 12px;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     color: #23aa23;
     font-weight: bold;
 }
@@ -2156,7 +2146,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
     background-color: rgba(255, 255, 255, 0.25);
     color: white;
     border-radius: 3px;
-    font-family: 'Avenir Book';
+    font-family: 'Dragon Fire';
 }
 .settingsChangelogText li+li {
     margin-top: .25em;
@@ -2266,7 +2256,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
 /* Release type text. */
 #settingsUpdateVersionTitle {
     font-size: 12px;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     color: #23aa23;
     font-weight: bold;
 }
@@ -2352,9 +2342,14 @@ input:checked + .toggleDisabledSwitchSlider:before {
 
 /* Lower content container. */
 #landingContainer > #lower {
-    height: 23%;
+    height: 5em;
     display: flex;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-color: rgb(41 24 6 / 51%);
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-right: double;
+    border-left: double;
 }
 #landingContainer > #lower > #left {
     position: relative;
@@ -2368,7 +2363,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
 #landingContainer > #lower > #left #content {
     position: relative;
     top: 25px;
-    display: inline-flex;
+    display: table-cell;
     line-height: 24px;
     left: 50px;
 }
@@ -2394,6 +2389,9 @@ input:checked + .toggleDisabledSwitchSlider:before {
     height: 100%;
     width: 33%;
     display: inline-flex;
+}
+#landingContainer > #lower > #right #content{
+    display: table-cell;
 }
 
 /*******************************************************************************
@@ -2465,7 +2463,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
 #newsArticleTitle {
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     color: white;
     text-decoration: none;
     transition: 0.25s ease;
@@ -2782,7 +2780,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
     z-index: 1;
     top: 115%;
     left: -17.5px;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     font-size: 12px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
 }
@@ -2828,7 +2826,12 @@ input:checked + .toggleDisabledSwitchSlider:before {
     position: relative;
     top: 50px;
     align-items: flex-start;
-    height: calc(100% - 50px);
+    height: calc(100% - 20px);
+    background: linear-gradient(180deg,rgb(41 24 6), transparent);
+    height: max-content;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    align-items: center;
 }
 
 /* Right hand user content container. */
@@ -2838,6 +2841,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
     justify-content: center;
     box-sizing: border-box;
     position: relative;
+    width: 100px;
 }
 
 /* User profile avatar container. */
@@ -2846,8 +2850,8 @@ input:checked + .toggleDisabledSwitchSlider:before {
     border: 2px solid #cad7e1;
     box-sizing: border-box;
     background: rgba(1, 2, 1, 0.5);
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
     overflow: hidden;
     position: relative;
@@ -2885,14 +2889,14 @@ input:checked + .toggleDisabledSwitchSlider:before {
 
 /* User profile name text. */
 #user_text {
-    font-size: 12px;
+    font-size: 25px;
     min-width: 135px;
     font-weight: 900;
     letter-spacing: 1px;
     text-shadow: 0px 0px 20px black;
     position: absolute;
-    right: 95px;
-    text-align: right;
+    right: 130px;
+    text-align: center;
     -webkit-user-select: initial;
 }
 
@@ -2932,16 +2936,15 @@ input:checked + .toggleDisabledSwitchSlider:before {
 /* Social media icon shared styles. */
 .mediaSVG {
     fill: #ffffff;
-    height: 12px;
+    height: 20px;
     transition: 0.25s ease;
     cursor: pointer;
-    height: 12px;
-    width: 25px;
+    width: 35px;
 }
 .mediaSVG:hover,
 .mediaURL:focus .mediaSVG,
 .mediaSVG:active {
-    height: 20px;
+    height: 15px;
 }
 
 /* Social media URL shared styles. */
@@ -2966,12 +2969,12 @@ input:checked + .toggleDisabledSwitchSlider:before {
 /* Settings icon colors. */
 #settingsSVG {
     stroke: #ffffff;
-    height: 15px;
+    height: 30px;
 }
 .mediaButton:hover #settingsSVG,
 .mediaButton:focus #settingsSVG,
 .mediaButton:active #settingsSVG {
-    height: 23px;
+    height: 35px;
 }
 
 /* Settings tooltip styles. */
@@ -3053,12 +3056,40 @@ input:checked + .toggleDisabledSwitchSlider:before {
 
 /* Style for a general label on the bottom of the landing view. */
 .bot_label {
-    font-size: 9px;
+    font-size: 25px;
     letter-spacing: 1px;
     font-weight: bold;
     text-shadow: 0px 0px 0px #bebcbb;
 }
+@media (max-width:1440px)
+{
+    .bot_label {
+        font-size: 25px;
+    }  
+    #player_count {
+        font-size: 18px;
+    }
+}
 
+@media (max-width:1177px)
+{
+    .bot_label {
+        font-size: 20px;
+    }  
+    #player_count {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1116px)
+{
+    .bot_label {
+        font-size: 18px;
+    } 
+    #player_count {
+        font-size: 12px;
+    }
+}
 /* Divider used on the bottom of the landing view. */
 .bot_divider {
     height: 25px;
@@ -3068,6 +3099,11 @@ input:checked + .toggleDisabledSwitchSlider:before {
     margin-right: 20px;
 }
 
+.bot_spaner {
+    color: rgba(107, 105, 105, 0.7);
+    margin-left: 5px;
+    margin-right: 5px;
+}
 /* * *
 * Landing View (Bottom Styles) | Left Content
 * * */
@@ -3081,7 +3117,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
 /* Span which displays the player count of the selected server. */
 #player_count {
     color: #949494;
-    font-size: 8px;
+    font-size:20px;
     font-weight: 900;
     text-shadow: 0px 0px 20px #949494;
     margin-left: 10px;
@@ -3114,7 +3150,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
     border-radius: 4px;
     padding: 5px 10px;
     z-index: 1;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     font-size: 12px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
     bottom: calc(100% + 15px);
@@ -3429,7 +3465,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
 
 /* Overlay title styles. */
 #overlayTitle {
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -3455,7 +3491,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
     background: none;
     border: 1px solid #ffffff;
     color: white;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     font-weight: bold;
     border-radius: 2px;
     padding: 0px 8.1px;
@@ -3507,7 +3543,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
 /* Server selection header. */
 #serverSelectHeader,
 #accountSelectHeader {
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     font-size: 20px;
     font-weight: bold;
     color: #fff;
@@ -3729,7 +3765,7 @@ input:checked + .toggleDisabledSwitchSlider:before {
     background: none;
     border: 1px solid #ffffff;
     color: white;
-    font-family: 'Avenir Medium';
+    font-family: 'Dragon Fire';
     font-weight: bold;
     border-radius: 2px;
     padding: 0px 8.1px;
