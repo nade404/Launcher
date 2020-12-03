@@ -1,39 +1,39 @@
 {
-    "_comment": "translatet",
+    "_comment": "traduire",
     "html": {
-        "avatarOverlay": "Bearbeiten"
+        "avatarOverlay": "Éditer"
     },
     "js": {
         "login": {
             "error": {
-                "invalidValue": "* Ung&uuml;ltige Angabe",
-                "requiredValue": "* Pflicht",
+                "invalidValue": "* Information invalide",
+                "requiredValue": "* obligatoire",
                 "userMigrated": {
-                    "title": "Fehler beim Anmelden:<br>Ung&uuml;ltige Angaben",
-                    "desc": "DU hast versucht, dich mit einem migrierten Account anzumelden. Versuche es erneut mit der Email des Benutzerkontos als Benutzername."
+                    "title": "Erreur de connexion: <br> Informations non valides",
+                    "desc": "VOUS avez essayé de vous connecter avec un compte migré. Réessayez en utilisant l'adresse e-mail du compte utilisateur comme nom d'utilisateur."
                 },
                 "invalidCredentials": {
-                    "title": "Fehler beim Anmelden:<br>Ung&uuml;ltige Angaben",
-                    "desc": "Die angegebenen Benutzerdaten sind falsch. Bitte versuche es erneut."
+                    "title": "Erreur de connexion: <br> Informations non valides",
+                    "desc": "Les données utilisateur spécifiées sont incorrectes. Veuillez réessayer."
                 },
                 "rateLimit": {
-                    "title": "Fehler beim Anmelden:<br>Zu viele Anfragen",
-                    "desc": "Es gibt zur Zeit zu viele Anfragen, sich mit diesem Account anzumelden. Versuche es sp&auml;ter nochmal."
+                    "title": "Erreur de connexion: <br> Trop de demandes",
+                    "desc": "Il y a actuellement trop de demandes de connexion avec ce compte. Réessayez plus tard."
                 },
                 "noInternet": {
-                    "title": "Fehler beim Anmelden:<br>Keine Internetverbindung",
-                    "desc": "Du brauchst eine Internetverbindung um dich bei Mojang anzumelden. Bitte stelle diese sicher und versuche es erneut."
+                    "title": "Échec de la connexion: <br> Aucune connexion Internet",
+                    "desc": "Vous avez besoin d'une connexion Internet pour vous connecter à Mojang. Veuillez vous en assurer et réessayer."
                 },
                 "authDown": {
-                    "title": "Fehler beim Anmelden:<br>Die Anmeldeserver von Mojang sind Offline",
-                    "desc": "Mojangs Anmeldeserver sind zur Zeit offline oder nicht erreichbar. Bitte warte ein bisschen und versuche es dann erneut. Du kannst den Status der Server <a href=\"https://help.mojang.com/\">HIER</a>. &uuml;berpr&uuml;fen."
+                    "title": "Échec de la connexion: <br> Les serveurs de connexion de Mojang sont hors lignee",
+                    "desc": "Les serveurs de connexion d'Mojang sont actuellement hors ligne ou indisponibles. Veuillez patienter un peu, puis réessayer. Vous pouvez vérifier l'état des serveurs <a href=\"https://help.mojang.com/\"> ICI </a>. Vérifier."
                 },
                 "notPaid": {
-                    "title": "Fehler beim Anmelden:<br>Minecraft wurde nicht gekauft",
-                    "desc": "Mit dem Account, mit dem du dich anmelden willst, wurde noch kein Minecraft (Java-Edition) gekauft.<br>Du musst dir <a href=\"https://minecraft.net/\">HIER</a> eine Version kaufen."
+                    "title": "Erreur de connexion: <br> Minecraft n'a pas été acheté",
+                    "desc": "Un Minecraft (Java Edition) n'a pas encore été acheté avec le compte avec lequel vous souhaitez vous connecter. <br> Vous devez aller <a href=\"https://minecraft.net/\"> ICI </a> acheter une version."
                 },
                 "unknown": {
-                    "title": "Fehler beim Anmelden:<br>Unbekannter Fehler"
+                    "title": "Échec de la connexion: <br> Erreur inconnue"
                 }
             },
             "login": "LOGIN",
