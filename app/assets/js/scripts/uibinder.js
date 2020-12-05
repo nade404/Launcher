@@ -337,7 +337,7 @@ async function validateSelectedAccount(){
                 loginViewOnCancel = getCurrentView()
                 if(accLen > 0){
                     loginViewCancelHandler = () => {
-                        ConfigManager.addAuthAccount(selectedAcc.uuid, selectedAcc.accessToken, selectedAcc.username, selectedAcc.displayName)
+                        ConfigManager.addAuthAccount(selectedAcc.uuid, selectedAcc.accessToken, selectedAcc.username, selectedAcc.displayName, selectedAcc.uuidMojang)
                         ConfigManager.save()
                         validateSelectedAccount()
                     }

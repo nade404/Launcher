@@ -1,6 +1,7 @@
 // Libs
 const request = require('request'); // Make HTTP Requests
 const azuriom = require('azuriom-auth'); // Implements Azuriom authentication module
+const { reject } = require('async');
 
 // Server's path
 const authPath = "https://site.evershell.net";
@@ -61,6 +62,15 @@ exports.invalidate = function(accessToken) {
             })
             .catch(e => {
                 reject(e)
+            })
+    })
+}
+
+exports.getUUID = function(username) {
+    return new Promise((resolve, reject) => {
+        request.get(`http://api.serveurs-minecraft.com/api_uuid?Pseudo_Vers_UUID&ID=${username}`,
+            (error, response, body) => {
+                resolve(body);
             })
     })
 }

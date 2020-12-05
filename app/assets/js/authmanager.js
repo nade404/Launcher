@@ -31,8 +31,9 @@ exports.addAccount = async function(username, password){
     try {
         //const session = await Mojang.authenticate(username, password, ConfigManager.getClientToken())
         const session = await Azuriom.authenticate(username, password)
+        const uuidMojang = await Azuriom.getUUID(username)
         if(session.selectedProfile != null){
-            const ret = ConfigManager.addAuthAccount(session.selectedProfile.id, session.accessToken, username, session.selectedProfile.name)
+            const ret = ConfigManager.addAuthAccount(session.selectedProfile.id, session.accessToken, username, session.selectedProfile.name, uuidMojang)
             if(ConfigManager.getClientToken() == null){
                 ConfigManager.setClientToken(session.clientToken)
             }
