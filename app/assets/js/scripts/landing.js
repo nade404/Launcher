@@ -13,6 +13,7 @@ const fs = require('fs')
 // Internal Requirements
 const DiscordWrapper = require('./assets/js/discordwrapper')
 const Mojang = require('./assets/js/mojang')
+const Azuriom = require('./assets/js/azuriom')
 const ProcessBuilder = require('./assets/js/processbuilder')
 const ServerStatus = require('./assets/js/serverstatus')
 
@@ -244,7 +245,8 @@ const refreshMojangStatuses = async function () {
     let tooltipNonEssentialHTML = ''
 
     try {
-        const statuses = await Mojang.status()
+        //const statuses = await Mojang.status()
+        const statuses = await Azuriom.status()
         greenCount = 0
         greyCount = 0
 
