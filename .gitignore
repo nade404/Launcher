@@ -1,0 +1,10 @@
+/node_modules/
+/.vs/
+/.vscode/
+/target/
+/logs/
+/dist/
+.env
+npm-debug.log
+.DS_Store
+package-lock.json

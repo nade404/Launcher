@@ -1,0 +1,50 @@
+{
+    "_comment": "traduire",
+    "html": {
+        "avatarOverlay": "Éditer"
+    },
+    "js": {
+        "login": {
+            "error": {
+                "invalidValue": "* Information invalide",
+                "requiredValue": "* obligatoire",
+                "userMigrated": {
+                    "title": "Erreur de connexion: <br> Informations non valides",
+                    "desc": "VOUS avez essayé de vous connecter avec un compte migré. Réessayez en utilisant l'adresse e-mail du compte utilisateur comme nom d'utilisateur."
+                },
+                "invalidCredentials": {
+                    "title": "Erreur de connexion: <br> Informations non valides",
+                    "desc": "Les données utilisateur spécifiées sont incorrectes. Veuillez réessayer."
+                },
+                "rateLimit": {
+                    "title": "Erreur de connexion: <br> Trop de demandes",
+                    "desc": "Il y a actuellement trop de demandes de connexion avec ce compte. Réessayez plus tard."
+                },
+                "noInternet": {
+                    "title": "Échec de la connexion: <br> Aucune connexion Internet",
+                    "desc": "Vous avez besoin d'une connexion Internet pour vous connecter à Mojang. Veuillez vous en assurer et réessayer."
+                },
+                "authDown": {
+                    "title": "Échec de la connexion: <br> Les serveurs de connexion de Mojang sont hors lignee",
+                    "desc": "Les serveurs de connexion d'Mojang sont actuellement hors ligne ou indisponibles. Veuillez patienter un peu, puis réessayer. Vous pouvez vérifier l'état des serveurs <a href=\"https://help.mojang.com/\"> ICI </a>. Vérifier."
+                },
+                "notPaid": {
+                    "title": "Erreur de connexion: <br> Minecraft n'a pas été acheté",
+                    "desc": "Un Minecraft (Java Edition) n'a pas encore été acheté avec le compte avec lequel vous souhaitez vous connecter. <br> Vous devez aller <a href=\"https://minecraft.net/\"> ICI </a> acheter une version."
+                },
+                "unknown": {
+                    "title": "Échec de la connexion: <br> Erreur inconnue"
+                }
+            },
+            "login": "LOGIN",
+            "loggingIn": "EINLOGGEN",
+            "success": "ERFOLGREICH",
+            "tryAgain": "Nochmal"
+        },
+        "landing": {
+            "launch": {
+                "pleaseWait": "Bitte warten.."
+            }
+        }
+    }
+}

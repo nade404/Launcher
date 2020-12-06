@@ -1,0 +1,73 @@
+{
+    "version": "1.1.0",
+    "discord": {
+        "clientId": "750725647495856149",
+        "smallImageText": "Auf Mc-Nexus.de",
+        "smallImageKey": "seal-circle"
+    },
+    "java": {
+        "oracle": "http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
+    },
+    "rss": "https://forum.mc-nexus.de/index.php?board-feed/",
+    "servers": [
+        {
+            "id": "EverShell",
+            "name": "EverShell RP",
+            "description": "Server EverShell",
+            "icon": "http://ChickenDevLab.github.io/NexusLauncher/app/assets/images/SealCircle.png",
+            "version": "1.0",
+            "address": "mc.evershell.net",
+            "port": 25565,
+            "minecraftVersion": "1.16.3",
+            "discord": {
+                "shortId": "EverShell",
+                "largeImageText": "1.16.3 Betaserver",
+                "largeImageKey": "seal-circle"
+            },
+            "mainServer": true,
+            "autoconnect": true,
+            "optifineVersion": "1.16.3_HD_U_G3",
+            "launchWrapperVersion": "2.2",
+            "modules": [
+                {
+                    "id": "optifine:Optifine:1.16.3_HD_U_G3",
+                    "name": "Optifine",
+                    "type": "Library",
+                    "artifact": {
+                        "size": 5265895,
+                        "MD5": "e60aa6e5a27de24bf1ff76e37d6cf70d",
+                        "url": "https://distribution.evershell.net/optifine.jar"
+                    }
+                },
+                {
+                    "id": "optifine:launchwrapper-of:2.2",
+                    "name": "Launchwrapper",
+                    "type": "Library",
+                    "artifact": {
+                        "size": 2932,
+                        "MD5": "3b1ace749885406d51ebe762cf9adfed",
+                        "url": "https://distribution.evershell.net/launchwrapper.jar"
+                    }
+                },
+                {
+                    "id": "servers.dat",
+                    "type": "File",
+                    "artifact": {
+                        "size": 4488,
+                        "path": "servers.dat",
+                        "url": "https://distribution.evershell.net/servers.dat" 
+                    }
+                },
+                {
+                    "id": "options.txt",
+                    "type": "File",
+                    "artifact": {
+                        "size": 2916,
+                        "path": "options.txt",
+                        "url": "https://distribution.evershell.net/options.txt" 
+                    }
+                }               
+            ]
+        }
+    ]
+}
