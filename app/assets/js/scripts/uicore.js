@@ -50,7 +50,8 @@ if(!isDev){
                 loggerAutoUpdaterSuccess.log('Nouvelle Mise à jour disponible', info.version)
                 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/ChickenDevLab/NexusLauncher/releases/download/v${info.version}/nexuslauncher-setup-${info.version}.dmg`
+                    //info.darwindownload = `https://github.com/ChickenDevLab/NexusLauncher/releases/download/v${info.version}/nexuslauncher-setup-${info.version}.dmg`
+                    info.darwindownload = `https://github.com/nade404/Launcher/releases/download/v${info.version}/EverShell-Launcher-setup-${info.version}.dmg`
                     showUpdateUI(info)
                 }
                 

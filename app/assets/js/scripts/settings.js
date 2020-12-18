@@ -1242,7 +1242,8 @@ function populateAboutVersionInformation() {
  */
 function populateReleaseNotes() {
     $.ajax({
-        url: 'https://github.com/ChickenDevLab/NexusLauncher/releases.atom',
+        //url: 'https://github.com/ChickenDevLab/NexusLauncher/releases.atom',
+        url: 'https://github.com/nade404/Launcher/releases.atom',
         success: (data) => {
             const version = 'v' + remote.app.getVersion()
             const entries = $(data).find('entry')
